@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Portal-POM-Pattern]">
+  <listeners>
+    <listener class-name="listeners.TestListner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="GridUrl" value="http://selenium.osde.ar:4444/wd/hub"/>
+    <parameter name="OS" value="linux"/>
+    <parameter name="BrowserType" value="Chrome"/>
+    <parameter name="Version" value="85.0.4183.83"/>
+    <parameter name="GridEnabled" value="false"/>
+    <classes>
+      <class name="tests.BusquedaNumeroSocioTest">
+        <methods>
+          <include name="AfterClass"/>
+          <include name="test"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.BusquedaNumeroSocioTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Portal-POM-Pattern] -->

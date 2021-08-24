@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Portal-POM-Pattern" parallel="false">
+	<listeners>
+		<listener class-name="listeners.TestListner" />
+	</listeners>
+	<test name="Test">
+		<parameter name="BrowserType" value="Chrome" />
+		<parameter name="GridEnabled" value="true" />
+		<parameter name="GridUrl" value="http://selenium.osde.ar:4444/wd/hub" />
+		<parameter name="OS" value="windows" />
+		<parameter name="Version" value="89" />
+		<classes>
+			<class name="tests.BusquedaNumeroSocioTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
